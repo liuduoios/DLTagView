@@ -1,0 +1,10 @@
+framework module DLTagView {
+  umbrella header "DLTagView.h"
+
+  export *
+  module * { export * }
+}
+
+module DLTagView.Swift {
+    header "DLTagView-Swift.h"
+}

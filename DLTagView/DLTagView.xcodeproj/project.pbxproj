@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8606B0361C032B3900F50EA4 /* DLTagView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8606B0351C032B3900F50EA4 /* DLTagView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8606B0801C032D2800F50EA4 /* DLTagInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606B07F1C032D2800F50EA4 /* DLTagInfo.swift */; };
+		8606B0821C032D6F00F50EA4 /* DLTagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606B0811C032D6F00F50EA4 /* DLTagButton.swift */; };
+		8606B0841C03315F00F50EA4 /* DLTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606B0831C03315F00F50EA4 /* DLTagView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8606B0321C032B3900F50EA4 /* DLTagView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLTagView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8606B0351C032B3900F50EA4 /* DLTagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTagView.h; sourceTree = "<group>"; };
 		8606B0371C032B3900F50EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8606B07F1C032D2800F50EA4 /* DLTagInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLTagInfo.swift; sourceTree = "<group>"; };
+		8606B0811C032D6F00F50EA4 /* DLTagButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLTagButton.swift; sourceTree = "<group>"; };
+		8606B0831C03315F00F50EA4 /* DLTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLTagView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				8606B0351C032B3900F50EA4 /* DLTagView.h */,
 				8606B0371C032B3900F50EA4 /* Info.plist */,
+				8606B07F1C032D2800F50EA4 /* DLTagInfo.swift */,
+				8606B0811C032D6F00F50EA4 /* DLTagButton.swift */,
+				8606B0831C03315F00F50EA4 /* DLTagView.swift */,
 			);
 			path = DLTagView;
 			sourceTree = "<group>";
@@ -130,6 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8606B0841C03315F00F50EA4 /* DLTagView.swift in Sources */,
+				8606B0821C032D6F00F50EA4 /* DLTagButton.swift in Sources */,
+				8606B0801C032D2800F50EA4 /* DLTagInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +240,7 @@
 		8606B03B1C032B3900F50EA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +251,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.liuduo.DLTagView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8606B03C1C032B3900F50EA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -276,6 +291,7 @@
 				8606B03C1C032B3900F50EA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
